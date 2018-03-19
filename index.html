@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+    
+    
+    <!------------------------------------------------------------------------------------------------------->
+    <!------------------------------------------ head ------------------------------------------------------->
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="This is template no 3">
+        
+        <title>Business</title>
+        
+        <!------------ css ----------------------->
+        <link href="CSS/style.css" type="text/css" rel="stylesheet">
+        
+        
+        <!------------ style --------------------->
+        <style>
+            #data #data_right #navigation ul li{
+                background-image: url(Images/square_black.png);
+                background-repeat: no-repeat;
+                background-size: 10px 10px;
+                background-position: 0px 5px;
+                
+                padding-left: 20px;
+            }
+            
+            #data #data_right #navigation ul li:hover{
+                background-image: url(Images/square_green.png);
+            }
+            
+            
+            
+            
+            #moredetails .moredetails_block ul li{
+                background-image: url(Images/arrow_right.png);
+                background-repeat: no-repeat;
+                background-size: 10px 10px;
+                background-position: 0px 5px;
+                padding-left: 20px;
+            }
+            
+        </style>
+        
+        
+        
+        <!------------ js ----------------------->
+        <script></script>
+        
+        
+    </head>
+    
+    
+    <!------------------------------------------------------------------------------------------------------->
+    <!------------------------------------------ body ------------------------------------------------------->
+    
+    <body>
+        <div id="content">
+            
+            <!------------------------------------------------------------------------------>
+            <!------------------------------- header --------------------------------------->
+            
+            <header>
+                <div id="logo">
+                    <img src="Images/logo.png" alt="logo" title="Business">
+                    <h1>Business Co.</h1>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Tools &amp; Links</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+            
+            
+            <!------------------------------------------------------------------------------>
+            <!------------------------------- slider --------------------------------------->
+            
+            <div id="slider">
+                <div id="slider_left">
+                    <h2>SMALL BUSINESS OWNERS</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feu</p>
+                    
+                    <form>
+                        <input type="button" value="Find out more">
+                    </form>
+                    
+                </div>
+                
+                <div id="slider_right">
+                    
+                    <div class="slider">
+                        <img src="Images/slider1.jpg" alt="slideshow">
+                    </div>
+                    
+                    <div class="slider">
+                        <img src="Images/slider2.jpg" alt="slideshow">
+                    </div>
+                    
+                    <div class="slider">
+                        <img src="Images/slider3.jpg" alt="slideshow">
+                    </div>
+                    
+                    <div class="slider">
+                        <img src="Images/slider4.jpg" alt="slideshow">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            var i;
+                            var slides = document.getElementsByClassName("slider");
+                            if (n > slides.length) {
+                                slideIndex = 1
+                            }    
+                            if (n < 1) {
+                                slideIndex = slides.length
+                            }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                            }
+
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                        }
+                    </script>
+
+                </div>
+            </div>
+            
+            
+            <!------------------------------------------------------------------------------>
+            <!-------------------------------  data ---------------------------------------->
+            <div id="data">
+                
+                <div id="data_left">
+                    
+                    <div id="data_left_top">
+                        <h2>Welcome to the <span style="color: #04b70d;">SMALL BUSINESS</span> OWNERS associain Website</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feu</p>
+                    </div>
+                    
+                    <div id="data_left_center">
+                        <h3>Our firm provides outstanding service to our clients</h3>
+                    </div>
+                    
+                    <div id="data_left_bottom">
+                        <div class="data_left_bottom_block">
+                            <img src="Images/data_pic.jpg">
+                            <p>Lorem ipsum dolor sit amet, diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                        </div>
+                        
+                        <div class="data_left_bottom_block">
+                            <img src="Images/data_pic.jpg">
+                            <p>Lorem ipsum dolor sit amet, diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                        </div>
+                        
+                        <div class="data_left_bottom_block" style="margin-right: 0px;">
+                            <img src="Images/data_pic.jpg">
+                            <p>Lorem ipsum dolor sit amet, diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div id="data_right">
+                    
+                    <div class="data_right_block" id="navigation">
+                        <h2>Navigation</h2>
+                        <ul>
+                            <li><a href="#navigation">Home</a></li>
+                            <li><a href="#navigation">Services</a></li>
+                            <li><a href="#navigation">About Us</a></li>
+                            <li><a href="#navigation">Blogs</a></li>
+                            <li><a href="#navigation">News</a></li>
+                            <li><a href="#navigation">Recent Posts</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="data_right_block" id="signup">
+                        <h2>Signup fpr Newsletter</h2>
+                        <form>
+                            <input type="email" placeholder="Enter Your Mail">
+                            <input type="button" value="Signup">
+                        </form>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            
+            
+            <!------------------------------------------------------------------------------>
+            <!------------------------------ moredetails ----------------------------------->
+            <div id="moredetails">
+                
+                <div class="moredetails_block" style="margin-left: 150px;">
+                    <h2>News and Updates</h2>
+                    <h4>October 11 2017</h4>
+                    <p>Lorem ipsum dolor sit amet, diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat, diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                </div>
+                
+                <div class="moredetails_block">
+                    <h2>Latest Blog Post</h2>
+                    <h4>Posted by John</h4>
+                    <p>Lorem ipsum dolor sit amet, diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat, diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                </div>
+                
+                <div class="moredetails_block">
+                    <h2>Recent Comments</h2>
+                    
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, tincidunt ut laoreet dolore magna aliquam erat.</li>
+                        <li>Lorem ipsum dolor sit amet, tincidunt ut laoreet dolore magna aliquam erat.</li>
+                        <li>Lorem ipsum dolor sit amet, tincidunt ut laoreet dolore magna aliquam erat.</li>
+                    </ul>
+                    
+                    
+                </div>
+                
+            </div>
+            
+            <!------------------------------------------------------------------------------>
+            <!------------------------------  footer --------------------------------------->
+            <footer>
+                <p>&#64; All rights reserved By/ Aalaa Khattab 2017</p>
+            </footer>
+            
+            
+            
+        </div>
+        
+        
+        
+    </body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</html>

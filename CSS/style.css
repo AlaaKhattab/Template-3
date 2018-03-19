@@ -1,0 +1,431 @@
+/************************************************************************************************/
+/************************************************************************************************/
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 1000px;
+    font-family: sans-serif;
+}
+
+#content{
+    height: 1000px;
+}
+
+
+
+/************************************************************************************************/
+/************************************* header ***************************************************/
+
+header{
+    height: 80px;
+    border-top: 5px solid #121d30;
+    background: linear-gradient(#2152a3,#143263);
+}
+/******************************/
+
+header #logo{
+    float: left;
+    margin-left: 100px;
+
+}
+
+header #logo img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-top: 10px;
+}
+
+header #logo h1{
+    float: left;
+    margin-left: 20px;
+    color: white;
+    
+}
+
+
+/******************************/
+
+header nav{
+    float: left;
+    margin-left: 150px;
+    height: 80px;
+}
+
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+    padding-bottom: 17px;
+}
+
+
+header nav ul li a:hover{
+    background-color: #c0d0c7;
+    color: black;
+}
+
+
+
+/************************************************************************************************/
+/************************************* slider ***************************************************/
+
+#slider{
+    height: 350px;
+    background-color: #c0d0c7;
+}
+
+
+#slider #slider_left , #slider #slider_right{
+    float: left;
+    width: 500px;
+    height: 300px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+
+#slider #slider_left h2{
+    font-size: 25px;
+    color: #121d30;
+    margin-left: 10px;
+}
+
+#slider #slider_left p{
+    color: white;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+#slider #slider_left form{
+    margin-left: 20px;
+    border-radius: 30px;
+}
+
+#slider #slider_left form input{
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid darkblue;
+    color: darkblue;
+    background-color: white;
+    font-size: 15px;
+}
+
+#slider #slider_left form input:hover{
+    color: white;
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+
+#slider #slider_right .slider img{
+    width: 400px;
+    height: 250px;
+    border: 10px solid white;
+    border-radius: 5px;
+}
+
+#slider #slider_right #arrow_left , #slider #slider_right #arrow_right{
+    width: 80px;
+    height: 40px;
+}
+
+
+#slider #slider_right #arrow_left{
+    position: relative;
+    top: -180px;
+    left: -20px;
+}
+
+#slider #slider_right #arrow_right{
+    position: relative;
+    top: -180px;
+    left: 230px;
+}
+
+
+#slider #slider_right .prev, #slider #slider_right .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -100px;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+}
+
+#slider #slider_right .prev{
+    background: linear-gradient(-90deg,#007c06,#04b70d);
+    margin-left: -42px;
+    border-radius: 3px 0px 0px 3px;
+}
+
+
+#slider #slider_right .next {
+    margin-left: 420px;
+    border-radius: 0px 3px 3px 0px;
+    background: linear-gradient(90deg,#007c06,#04b70d);
+}
+
+#slider #slider_right .prev:hover, #slider #slider_right .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/************************************************************************************************/
+/*************************************** data ***************************************************/
+
+#data{
+    height: 730px;
+    background-color: #eeeeee;
+}
+
+
+/*************************************************************/
+#data #data_left{
+    width: 700px;
+    height: 620px;
+    float: left;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+/**************************/
+#data #data_left #data_left_top{}
+
+
+#data #data_left #data_left_top h2{
+    width: 650px;
+    font-size: 30px;
+}
+
+#data #data_left #data_left_top p{
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+}
+
+/**************************/
+#data #data_left #data_left_center{
+    border-bottom: 1px solid gray;
+}
+
+/**************************/
+#data #data_left #data_left_bottom{
+    height: 320px;
+}
+
+
+#data #data_left #data_left_bottom .data_left_bottom_block{
+    float: left;
+    margin-top: 25px;
+    margin-right: 18px;
+}
+
+
+#data #data_left #data_left_bottom .data_left_bottom_block img{
+    width: 200px;
+    height: 150px;
+    border: 10px solid white;
+    border-radius: 10px;
+}
+
+
+#data #data_left #data_left_bottom .data_left_bottom_block p{
+    width: 180px;
+    margin-left: 5px;
+}
+
+/*************************************************************/
+
+#data #data_right{
+    width: 300px;
+    height: 620px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+#data #data_right .data_right_block{
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+#data #data_right .data_right_block h2{
+    border: 1px solid #aad0d6;
+    margin-top: 0px;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    background: linear-gradient(0deg,#c0dee2,white);
+}
+
+/**************************************/
+#data #data_right #navigation{
+    height: 330px;
+    background-color: #d8e7ea;
+}
+
+#data #data_right #navigation ul{}
+
+#data #data_right #navigation ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#data #data_right #navigation ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+#data #data_right #navigation ul li a:hover{
+    color: #008700;
+}
+
+/**************************************/
+#data #data_right #signup{
+    margin-top: 30px;
+    height: 230px;
+    background-color: #d8e7ea;
+}
+
+#data #data_right #signup form{}
+
+#data #data_right #signup input[type="email"]{
+    display: block;
+    margin-left: 25px;
+    width: 230px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+#data #data_right #signup input[type="button"]{
+    display: block;
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #04b70d;
+    font-size: 20px;
+}
+
+
+
+/************************************************************************************************/
+/************************************ moredetails ***********************************************/
+#moredetails{
+    height: 260px;
+    background-color: #292949;
+}
+
+
+#moredetails .moredetails_block{
+    width: 300px;
+    height: 260px;
+    margin-left: 50px;
+    float: left;
+}
+
+
+
+#moredetails .moredetails_block h2{
+    color: white;
+    background: linear-gradient(0deg,#42ba42,#50e250);
+    border-radius: 5px;
+    padding-top: 20px;
+    height: 50px;
+    margin-top: -20px;
+    font-size: 22px;
+    text-align: center;
+    
+}
+
+#moredetails .moredetails_block h4{
+    color: green;
+}
+
+#moredetails .moredetails_block p{
+    color: white;
+}
+
+
+#moredetails .moredetails_block ul{
+    margin-left: -35px;
+    padding-top: 10px;
+}
+
+#moredetails .moredetails_block ul li{
+    color: white;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+/************************************************************************************************/
+/************************************ moredetails ***********************************************/
+
+footer{
+    background-color: #15152d;
+    margin-top: 0px;
+    align-content: center;
+    padding: 5px;
+}
+
+
+footer p{
+    color: lightgray;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
